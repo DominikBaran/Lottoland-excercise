@@ -2,7 +2,6 @@
 using System;
 using System.Linq;
 
-
 namespace Lottoland.Data
 {
     public static class TestUsers
