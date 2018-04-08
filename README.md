@@ -63,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Test Results example
 As a result of the test execution user should be able to see something similar to:
-![Alt text](/results/result.png?raw=true "Result example")
+![Alt text](/results/result.PNG "Result example")
