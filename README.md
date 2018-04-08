@@ -1,73 +1,58 @@
 # Project Title
 
-One Paragraph of project description goes here
+Lottoland - example test automation for the user registration
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Project developed in C#/.net (4.6) using Visual Studio 2015.
+Solution use:
+- Nunit version 3.10.x
+- Selenium WebDriver - 3.11.x
+- Selenium WebDriver Support - 3.11.x
+- Selenium.Chrome.WebDriver.2.37
+- Selenium.Firefox.WebDriver.0.20.0
+
+For the project and the automation I used two main test automation approaches:
+- Page Object pattern
+- Page Object factory
+
+Because of lack of time I did not use Behavior Driven Development (BDD) approach
+with feature (gherkin) files and Given/When/Then descriptive language. However
+solution is created in really general and flexible way so it is not really big
+problem to update solution to use BDD approach.
+What is more all the helpers and generators are generic: for the test approach
+we will select 5 users from list of 10 - but the method accept argument so it's
+possible to select 1-max number of the users.
+
+There is also possible to change testing url and browser - in App.config file in
+the solution. Test automation supports 2 of the most common usage browsers:
+Mozilla Firefox and Google Chrome.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+As a prerequisite to run the test - it's important to have install c# compiler
+(or Visual Studio IDE) and .net on the machine.
+All the libraries needed for the test will be automatically download and install
+by Nuget package - which is a part of .net/Visual studio.
+After nuget package installation all needed libraries should be available in
+Project folder/packages/{name of the library}
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+As above - all the packages will be installed by Nuget package manager.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-
-## Contributing
-
-
-## Versioning
+To run test please open solution in Visual Studio 2015 (or newer), compile code
+and run unit test use nunit explorer or re-sharper test explorer.
+Additionally when the code is compiled (bin/Debug & bin/Release folders exist) to
+run the test we could use desktop nunit runner.
 
 
 ## Authors
 
-* **Dominik Baran** 
+* **Dominik Baran**
 
 
 ## License
@@ -75,4 +60,3 @@ Add additional notes about how to deploy this on a live system
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
